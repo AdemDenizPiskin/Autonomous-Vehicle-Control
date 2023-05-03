@@ -1,5 +1,5 @@
 # Autonomous-Vehicle-Control
-This project was part of my EE498 course. The object was lane keeping and obstacle avoidance using MPC. It is assumed that speed of the vehicle is constant. 
+This project was part of my EE498 course. The object was lane keeping and obstacle avoidance using Model Predictive Controller (MPC). It is assumed that speed of the vehicle is constant. 
 
 The implementation is a little bit simplified version of the algorithm in this article: Turri, V., Carvalho, A., Tseng, H.E., Johansson, K.H. and Borrelli, F., 2013, October. Linear model
 predictive control for lane keeping and obstacle avoidance on low curvature roads. In 16th international
@@ -19,7 +19,10 @@ A file that keeps most of the relevent functions for thee project such generatin
 A script to calculate empirically some linearized parameters for the vehicle dynamics.
 
 ### semi_lin_VD.m
-A function that models the semi-linear dynamics of the car.
+A function that models the semi-linear dynamics of the vehicle that would be used by the MPC
+
+### vehicle_dynamics.m
+The model for the actual non-linear dynamics of the vehicle
 
 ### test_vehicle_dynamics.m
 A simple test of the vehicle dynamics on a circular road
